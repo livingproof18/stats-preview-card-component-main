@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container{
+    background-color:hsl(244, 38%, 16%);
+    text-align: center;
+    margin: 15% 7% 15% 7%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-bottom: 10px;
+    
+}
+
+
+img{ 
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 10%;
+    filter: invert(10%) sepia(27%) saturate(1666%) hue-rotate(242deg) brightness(50%) contrast(80%);
+
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.93rem;
+    margin-bottom: 7%;
+    
+    
+}
+
+.violet {
+    color:hsl(277, 64%, 61%);
+}
+
+
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+    margin-bottom: 10%;
+
+}
+
+strong{
+    display: block;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 2%;
+}
+
+li > span{
+    display: block;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.9rem;
+    margin-bottom: 10%;
+    text-transform: uppercase;  
+}
+
+.attribution{
+    font-size: 25px;
+    color: white;
+}
+
+@media (min-width:1400px ) {
+
+    section.container {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas:
+        "content computer";
+        padding: 0;
+        border-top-left-radius: 15px;
+        height: 500px;
+    }
+
+
+    .main{
+        grid-area: content;
+        text-align: center;
+        align-self: center;
+        height: 500px;
+
+        
+    }
+
+    img{
+        grid-area: computer;
+        height: 500px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 0px;
+        
+       
+    }
+
+    h1{
+        font-size: 2.8rem;
+        margin: 4% auto;
+        width: 80%;
+        text-align: left;
+    }
+
+    p{
+        font-size: 1.3rem;
+        margin: 5% auto;
+        width: 80%;
+        text-align: left;
+        line-height: 35px;
+
+    }
+
+    .stats{
+        display: flex;
+        margin-top: 12%;
+        justify-content: space-evenly;
+        
+    }
+
+    strong{
+        display: block;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    
+    }
+    
+    li > span{
+       
+        font-size: 1rem;
+    }
+
+
+
+}
